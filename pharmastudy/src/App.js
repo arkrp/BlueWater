@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-     <button onClick={() => addPatient()}>Remov Patient</button>
+     <button onClick={() => addPatient()}>Remove Patient</button>
     </div>
   );
 }
