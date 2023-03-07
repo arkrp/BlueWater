@@ -120,3 +120,25 @@ body {
     background-color: #41729F;
     transition-duration: 0.4s;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #003B73;
+    text-align: left;
+    padding: 8px;
+    background: white;
+  }
+
+  th {
+    background: #41729F;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
