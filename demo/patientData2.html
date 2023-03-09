@@ -9,7 +9,7 @@
         <div class="navbar">
             <a href="index.html"> Hello </a>
             <a href="aboutUs.html"> About Us </a>
-            <a href="loginAdmin.html"> Admin </a>
+            <a href="loginAdmin.html" class="active"> Admin </a>
             <a href="loginFDA.html"> FDA </a>
             <a href="loginHopkins.html"> Staff </a>
             <a class="search"> <input type="text" placeholder="Search..."> </a>
@@ -21,12 +21,12 @@
         </div>
 
         <div class="content">
-            <table class="table table-striped">
+            <table class="table table-striped" style="width:80%">
                 <tr  class="bg-info">
-                    <th>First</th>
-                    <th>Last</th>
-                    <th>Age</th>
-                    <th>Insurance Number</th>
+                    <th style="width:30%">First</th>
+                    <th style="width:30%">Last</th>
+                    <th style="width:10%;">Age</th>
+                    <th style="width:20%">Insurance Number</th>
                 </tr>
             
                 <tbody id="myTable">
@@ -41,6 +41,13 @@
                     {'firstName':'Dennis',      'lastName':'Rodriguez',    'age':'25',      'insuranceID':'12223'},
                     {'firstName':'Tim',         'lastName':'Allen',        'age':'27',      'insuranceID':'78993'},
                     {'firstName':'Erik',        'lastName':'Carter',       'age':'24',      'insuranceID':'49112'},
+                    {'firstName':'Dan',         'lastName':'Carter',       'age':'24',      'insuranceID':'678834'},
+                    {'firstName':'Andrew',      'lastName':'Forger',       'age':'21',      'insuranceID':'56663'},
+                    {'firstName':'Elliot',      'lastName':'Hanson',       'age':'29',      'insuranceID':'27735'},
+                    {'firstName':'Rena',        'lastName':'Black',        'age':'45',      'insuranceID':'78744'},
+                    {'firstName':'Ashley',      'lastName':'Andrews',      'age':'34',      'insuranceID':'03643'},
+                    {'firstName':'Kyle',        'lastName':'Johnson',      'age':'32',      'insuranceID':'23685'},
+                    {'firstName':'Stan',        'lastName':'Smith',        'age':'31',      'insuranceID':'22758'},
                 ]
 	
 	            buildTable(myArray)
