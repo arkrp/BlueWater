@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="icon" href="medical_icon.png">
+        <title> Jane Hopkins Medical Group </title>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html"> Hello </a>
+            <a href="aboutUs.html"> About Us </a>
+            <a href="loginAdmin.html"> Admin </a>
+            <a href="loginFDA.html"> FDA </a>
+            <a href="loginHopkins.html"> Staff </a>
+            <a class="search"> <input type="text" placeholder="Search..."> </a>
+        </div>
+
+        <div class="header2">
+            <h1> Jane Hopkins Medical Group </h1>
+            <h2> Patient Data </h2>
+        </div>
+
+        <div class="content">
+            <table class="table table-striped">
+                <tr  class="bg-info">
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Age</th>
+                    <th>Insurance Number</th>
+                </tr>
+            
+                <tbody id="myTable">
+                    
+                </tbody>
+            </table>
+            <script>
+                var myArray = [
+                    {'firstName':'Michael',     'lastName':'Smith',        'age':'30',      'insuranceID':'10112'},
+                    {'firstName':'Mila',        'lastName':'Lopez',        'age':'32',      'insuranceID':'90221'},
+                    {'firstName':'Paul',        'lastName':'Lee',          'age':'29',      'insuranceID':'45223'},
+                    {'firstName':'Dennis',      'lastName':'Rodriguez',    'age':'25',      'insuranceID':'12223'},
+                    {'firstName':'Tim',         'lastName':'Allen',        'age':'27',      'insuranceID':'78993'},
+                    {'firstName':'Erik',        'lastName':'Carter',       'age':'24',      'insuranceID':'49112'},
+                ]
+	
+	            buildTable(myArray)
+
+                function buildTable(data){
+                    var table = document.getElementById('myTable')
+
+                    for (var i = 0; i < data.length; i++){
+                        var row = `<tr>
+                                        <td>${data[i].firstName}</td>
+                                        <td>${data[i].lastName}</td>
+                                        <td>${data[i].age}</td>
+                                        <td>${data[i].insuranceID}</td>
+                                </tr>`
+                        table.innerHTML += row
+
+
+                    }
+                }
+            </script>
+
+        </div>
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+</html>
